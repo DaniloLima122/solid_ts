@@ -1,7 +1,7 @@
 import EventHandler from './EventHandler';
-import AbstractShareButton from './AbstractShareButton';
+import AbstractLinkShareButton from './AbstractLinkShareButton ';
 
-export default class ShareButtonFacebook extends AbstractShareButton {
+export default class ShareButtonFacebook extends AbstractLinkShareButton {
 
     eventHandler: EventHandler
 
