@@ -1,4 +1,4 @@
-import Eventhandler from './EventHandler';
+import Eventhandler from './DOMEventHandler';
 import AbstractShareButton from './AbstractShareButton';
 
 export default abstract class AbstractLinkShareButton extends AbstractShareButton{
@@ -7,8 +7,8 @@ export default abstract class AbstractLinkShareButton extends AbstractShareButto
     url: string;
     eventHandler : Eventhandler;
 
-    constructor(clazz : string, url : string){
-        super(clazz)
+    constructor(eventHandler : Eventhandler, clazz : string, url : string){
+        super(eventHandler,clazz)
         this.clazz = clazz;
         this.url = url;
         this.eventHandler = new Eventhandler();

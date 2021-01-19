@@ -1,12 +1,4 @@
-export default class Eventhandler{
+export default interface Eventhandler{
 
-    addEventListenerToClass(clazz : string, event : string, fn : any){
-
-        const elements : any = document.querySelectorAll(clazz);
-        
-        for(const element of elements){
-            element.addEventListener("click", fn)
-        }
-        
-    }
+    addEventListenerToClass(clazz : string, event : string, fn : any);    
 }

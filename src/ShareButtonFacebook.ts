@@ -1,13 +1,13 @@
-import EventHandler from './EventHandler';
+import EventHandler from './DOMEventHandler';
 import AbstractLinkShareButton from './AbstractLinkShareButton ';
 
 export default class ShareButtonFacebook extends AbstractLinkShareButton {
 
     eventHandler: EventHandler
 
-    constructor(clazz: string, url: string) {
+    constructor(eventHandler : EventHandler, clazz: string, url: string) {
 
-        super(clazz, url);
+        super(eventHandler,clazz, url);
 
         this.eventHandler = new EventHandler()
     }

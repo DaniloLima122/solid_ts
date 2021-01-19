@@ -1,13 +1,13 @@
-import EventHandler from './EventHandler';
+import EventHandler from './DOMEventHandler';
 import AbstractShareButton from './AbstractShareButton';
 
 export default class ShareButtonPrint extends AbstractShareButton {
 
     eventHandler: EventHandler
 
-    constructor(clazz: string) {
+    constructor(eventHandler: EventHandler,clazz: string) {
 
-        super(clazz);
+        super(eventHandler,clazz);
 
         this.eventHandler = new EventHandler()
     }
